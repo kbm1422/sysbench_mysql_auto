@@ -1,0 +1,451 @@
+2019-03-27 22:52:55,436 - INFO: ##########START bulk_insert TEST##########:
+2019-03-27 22:52:55,436 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb bulk_insert
+2019-03-27 22:53:05,669 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:53:05,669 - INFO: 
+2019-03-27 22:53:05,669 - INFO: Running the test with following options:
+2019-03-27 22:53:05,669 - INFO: Number of threads: 1
+2019-03-27 22:53:05,670 - INFO: Initializing random number generator from current time
+2019-03-27 22:53:05,670 - INFO: 
+2019-03-27 22:53:05,670 - INFO: 
+2019-03-27 22:53:05,670 - INFO: Initializing worker threads...
+2019-03-27 22:53:05,670 - INFO: 
+2019-03-27 22:53:05,670 - INFO: Threads started!
+2019-03-27 22:53:05,670 - INFO: 
+2019-03-27 22:53:05,670 - INFO: SQL statistics:
+2019-03-27 22:53:05,670 - INFO:     queries performed:
+2019-03-27 22:53:05,670 - INFO:         read:                            0
+2019-03-27 22:53:05,670 - INFO:         write:                           53
+2019-03-27 22:53:05,670 - INFO:         other:                           0
+2019-03-27 22:53:05,670 - INFO:         total:                           53
+2019-03-27 22:53:05,670 - INFO:     transactions:                        1637967 (163095.67 per sec.)
+2019-03-27 22:53:05,670 - INFO:     queries:                             53     (5.28 per sec.)
+2019-03-27 22:53:05,670 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:53:05,670 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:53:05,670 - INFO: 
+2019-03-27 22:53:05,670 - INFO: General statistics:
+2019-03-27 22:53:05,670 - INFO:     total time:                          10.0416s
+2019-03-27 22:53:05,670 - INFO:     total number of events:              1637967
+2019-03-27 22:53:05,670 - INFO: 
+2019-03-27 22:53:05,670 - INFO: Latency (ms):
+2019-03-27 22:53:05,671 - INFO:          min:                                    0.00
+2019-03-27 22:53:05,671 - INFO:          avg:                                    0.01
+2019-03-27 22:53:05,671 - INFO:          max:                                  283.53
+2019-03-27 22:53:05,671 - INFO:          95th percentile:                        0.00
+2019-03-27 22:53:05,671 - INFO:          sum:                                 9611.60
+2019-03-27 22:53:05,671 - INFO: 
+2019-03-27 22:53:05,671 - INFO: Threads fairness:
+2019-03-27 22:53:05,671 - INFO:     events (avg/stddev):           1637967.0000/0.00
+2019-03-27 22:53:05,671 - INFO:     execution time (avg/stddev):   9.6116/0.00
+2019-03-27 22:53:05,671 - INFO: 
+2019-03-27 22:53:05,671 - INFO: '
+2019-03-27 22:53:05,778 - INFO: ##########TEST bulk_insert IS DONE##########
+2019-03-27 22:53:05,778 - INFO: ##########START oltp_read_only TEST##########:
+2019-03-27 22:53:05,779 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_read_only
+2019-03-27 22:53:16,135 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:53:16,135 - INFO: 
+2019-03-27 22:53:16,135 - INFO: Running the test with following options:
+2019-03-27 22:53:16,135 - INFO: Number of threads: 1
+2019-03-27 22:53:16,135 - INFO: Initializing random number generator from current time
+2019-03-27 22:53:16,135 - INFO: 
+2019-03-27 22:53:16,135 - INFO: 
+2019-03-27 22:53:16,135 - INFO: Initializing worker threads...
+2019-03-27 22:53:16,135 - INFO: 
+2019-03-27 22:53:16,135 - INFO: Threads started!
+2019-03-27 22:53:16,135 - INFO: 
+2019-03-27 22:53:16,135 - INFO: SQL statistics:
+2019-03-27 22:53:16,135 - INFO:     queries performed:
+2019-03-27 22:53:16,135 - INFO:         read:                            12642
+2019-03-27 22:53:16,136 - INFO:         write:                           0
+2019-03-27 22:53:16,136 - INFO:         other:                           1806
+2019-03-27 22:53:16,136 - INFO:         total:                           14448
+2019-03-27 22:53:16,136 - INFO:     transactions:                        903    (90.21 per sec.)
+2019-03-27 22:53:16,136 - INFO:     queries:                             14448  (1443.40 per sec.)
+2019-03-27 22:53:16,136 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:53:16,136 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:53:16,136 - INFO: 
+2019-03-27 22:53:16,136 - INFO: General statistics:
+2019-03-27 22:53:16,136 - INFO:     total time:                          10.0083s
+2019-03-27 22:53:16,136 - INFO:     total number of events:              903
+2019-03-27 22:53:16,136 - INFO: 
+2019-03-27 22:53:16,136 - INFO: Latency (ms):
+2019-03-27 22:53:16,136 - INFO:          min:                                    8.92
+2019-03-27 22:53:16,136 - INFO:          avg:                                   11.08
+2019-03-27 22:53:16,136 - INFO:          max:                                   22.39
+2019-03-27 22:53:16,136 - INFO:          95th percentile:                       12.08
+2019-03-27 22:53:16,136 - INFO:          sum:                                10003.60
+2019-03-27 22:53:16,136 - INFO: 
+2019-03-27 22:53:16,136 - INFO: Threads fairness:
+2019-03-27 22:53:16,136 - INFO:     events (avg/stddev):           903.0000/0.00
+2019-03-27 22:53:16,136 - INFO:     execution time (avg/stddev):   10.0036/0.00
+2019-03-27 22:53:16,136 - INFO: 
+2019-03-27 22:53:16,136 - INFO: '
+2019-03-27 22:53:16,195 - INFO: ##########TEST oltp_read_only IS DONE##########
+2019-03-27 22:53:16,195 - INFO: ##########START oltp_delete TEST##########:
+2019-03-27 22:53:16,195 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_delete
+2019-03-27 22:53:26,538 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:53:26,539 - INFO: 
+2019-03-27 22:53:26,539 - INFO: Running the test with following options:
+2019-03-27 22:53:26,539 - INFO: Number of threads: 1
+2019-03-27 22:53:26,539 - INFO: Initializing random number generator from current time
+2019-03-27 22:53:26,539 - INFO: 
+2019-03-27 22:53:26,539 - INFO: 
+2019-03-27 22:53:26,539 - INFO: Initializing worker threads...
+2019-03-27 22:53:26,539 - INFO: 
+2019-03-27 22:53:26,539 - INFO: Threads started!
+2019-03-27 22:53:26,539 - INFO: 
+2019-03-27 22:53:26,539 - INFO: SQL statistics:
+2019-03-27 22:53:26,539 - INFO:     queries performed:
+2019-03-27 22:53:26,539 - INFO:         read:                            0
+2019-03-27 22:53:26,539 - INFO:         write:                           1502
+2019-03-27 22:53:26,539 - INFO:         other:                           6640
+2019-03-27 22:53:26,540 - INFO:         total:                           8142
+2019-03-27 22:53:26,540 - INFO:     transactions:                        8142   (813.88 per sec.)
+2019-03-27 22:53:26,540 - INFO:     queries:                             8142   (813.88 per sec.)
+2019-03-27 22:53:26,540 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:53:26,540 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:53:26,540 - INFO: 
+2019-03-27 22:53:26,540 - INFO: General statistics:
+2019-03-27 22:53:26,540 - INFO:     total time:                          10.0025s
+2019-03-27 22:53:26,540 - INFO:     total number of events:              8142
+2019-03-27 22:53:26,540 - INFO: 
+2019-03-27 22:53:26,540 - INFO: Latency (ms):
+2019-03-27 22:53:26,540 - INFO:          min:                                    0.48
+2019-03-27 22:53:26,540 - INFO:          avg:                                    1.23
+2019-03-27 22:53:26,540 - INFO:          max:                                   34.66
+2019-03-27 22:53:26,540 - INFO:          95th percentile:                        3.49
+2019-03-27 22:53:26,540 - INFO:          sum:                                 9993.16
+2019-03-27 22:53:26,540 - INFO: 
+2019-03-27 22:53:26,540 - INFO: Threads fairness:
+2019-03-27 22:53:26,540 - INFO:     events (avg/stddev):           8142.0000/0.00
+2019-03-27 22:53:26,540 - INFO:     execution time (avg/stddev):   9.9932/0.00
+2019-03-27 22:53:26,540 - INFO: 
+2019-03-27 22:53:26,540 - INFO: '
+2019-03-27 22:53:26,606 - INFO: ##########TEST oltp_delete IS DONE##########
+2019-03-27 22:53:26,607 - INFO: ##########START oltp_insert TEST##########:
+2019-03-27 22:53:26,607 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_insert
+2019-03-27 22:53:36,988 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:53:36,988 - INFO: 
+2019-03-27 22:53:36,989 - INFO: Running the test with following options:
+2019-03-27 22:53:36,989 - INFO: Number of threads: 1
+2019-03-27 22:53:36,989 - INFO: Initializing random number generator from current time
+2019-03-27 22:53:36,989 - INFO: 
+2019-03-27 22:53:36,989 - INFO: 
+2019-03-27 22:53:36,989 - INFO: Initializing worker threads...
+2019-03-27 22:53:36,989 - INFO: 
+2019-03-27 22:53:36,989 - INFO: Threads started!
+2019-03-27 22:53:36,989 - INFO: 
+2019-03-27 22:53:36,989 - INFO: SQL statistics:
+2019-03-27 22:53:36,989 - INFO:     queries performed:
+2019-03-27 22:53:36,989 - INFO:         read:                            0
+2019-03-27 22:53:36,989 - INFO:         write:                           3246
+2019-03-27 22:53:36,989 - INFO:         other:                           0
+2019-03-27 22:53:36,989 - INFO:         total:                           3246
+2019-03-27 22:53:36,989 - INFO:     transactions:                        3246   (324.36 per sec.)
+2019-03-27 22:53:36,989 - INFO:     queries:                             3246   (324.36 per sec.)
+2019-03-27 22:53:36,989 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:53:36,989 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:53:36,989 - INFO: 
+2019-03-27 22:53:36,989 - INFO: General statistics:
+2019-03-27 22:53:36,989 - INFO:     total time:                          10.0060s
+2019-03-27 22:53:36,989 - INFO:     total number of events:              3246
+2019-03-27 22:53:36,990 - INFO: 
+2019-03-27 22:53:36,990 - INFO: Latency (ms):
+2019-03-27 22:53:36,990 - INFO:          min:                                    2.22
+2019-03-27 22:53:36,990 - INFO:          avg:                                    3.08
+2019-03-27 22:53:36,990 - INFO:          max:                                   45.53
+2019-03-27 22:53:36,990 - INFO:          95th percentile:                        4.18
+2019-03-27 22:53:36,990 - INFO:          sum:                                 9993.10
+2019-03-27 22:53:36,990 - INFO: 
+2019-03-27 22:53:36,990 - INFO: Threads fairness:
+2019-03-27 22:53:36,990 - INFO:     events (avg/stddev):           3246.0000/0.00
+2019-03-27 22:53:36,990 - INFO:     execution time (avg/stddev):   9.9931/0.00
+2019-03-27 22:53:36,990 - INFO: 
+2019-03-27 22:53:36,990 - INFO: '
+2019-03-27 22:53:37,058 - INFO: ##########TEST oltp_insert IS DONE##########
+2019-03-27 22:53:37,058 - INFO: ##########START oltp_point_select TEST##########:
+2019-03-27 22:53:37,058 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_point_select
+2019-03-27 22:53:47,426 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:53:47,427 - INFO: 
+2019-03-27 22:53:47,427 - INFO: Running the test with following options:
+2019-03-27 22:53:47,427 - INFO: Number of threads: 1
+2019-03-27 22:53:47,427 - INFO: Initializing random number generator from current time
+2019-03-27 22:53:47,427 - INFO: 
+2019-03-27 22:53:47,427 - INFO: 
+2019-03-27 22:53:47,427 - INFO: Initializing worker threads...
+2019-03-27 22:53:47,427 - INFO: 
+2019-03-27 22:53:47,427 - INFO: Threads started!
+2019-03-27 22:53:47,427 - INFO: 
+2019-03-27 22:53:47,427 - INFO: SQL statistics:
+2019-03-27 22:53:47,427 - INFO:     queries performed:
+2019-03-27 22:53:47,427 - INFO:         read:                            14350
+2019-03-27 22:53:47,427 - INFO:         write:                           0
+2019-03-27 22:53:47,427 - INFO:         other:                           0
+2019-03-27 22:53:47,427 - INFO:         total:                           14350
+2019-03-27 22:53:47,427 - INFO:     transactions:                        14350  (1434.39 per sec.)
+2019-03-27 22:53:47,427 - INFO:     queries:                             14350  (1434.39 per sec.)
+2019-03-27 22:53:47,427 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:53:47,427 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:53:47,427 - INFO: 
+2019-03-27 22:53:47,427 - INFO: General statistics:
+2019-03-27 22:53:47,428 - INFO:     total time:                          10.0028s
+2019-03-27 22:53:47,428 - INFO:     total number of events:              14350
+2019-03-27 22:53:47,428 - INFO: 
+2019-03-27 22:53:47,428 - INFO: Latency (ms):
+2019-03-27 22:53:47,428 - INFO:          min:                                    0.50
+2019-03-27 22:53:47,428 - INFO:          avg:                                    0.70
+2019-03-27 22:53:47,428 - INFO:          max:                                    7.96
+2019-03-27 22:53:47,428 - INFO:          95th percentile:                        0.84
+2019-03-27 22:53:47,428 - INFO:          sum:                                 9990.04
+2019-03-27 22:53:47,428 - INFO: 
+2019-03-27 22:53:47,428 - INFO: Threads fairness:
+2019-03-27 22:53:47,428 - INFO:     events (avg/stddev):           14350.0000/0.00
+2019-03-27 22:53:47,428 - INFO:     execution time (avg/stddev):   9.9900/0.00
+2019-03-27 22:53:47,428 - INFO: 
+2019-03-27 22:53:47,428 - INFO: '
+2019-03-27 22:53:47,490 - INFO: ##########TEST oltp_point_select IS DONE##########
+2019-03-27 22:53:47,491 - INFO: ##########START oltp_write_only TEST##########:
+2019-03-27 22:53:47,491 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_write_only
+2019-03-27 22:53:57,829 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:53:57,830 - INFO: 
+2019-03-27 22:53:57,830 - INFO: Running the test with following options:
+2019-03-27 22:53:57,830 - INFO: Number of threads: 1
+2019-03-27 22:53:57,830 - INFO: Initializing random number generator from current time
+2019-03-27 22:53:57,830 - INFO: 
+2019-03-27 22:53:57,830 - INFO: 
+2019-03-27 22:53:57,830 - INFO: Initializing worker threads...
+2019-03-27 22:53:57,830 - INFO: 
+2019-03-27 22:53:57,830 - INFO: Threads started!
+2019-03-27 22:53:57,830 - INFO: 
+2019-03-27 22:53:57,830 - INFO: SQL statistics:
+2019-03-27 22:53:57,830 - INFO:     queries performed:
+2019-03-27 22:53:57,830 - INFO:         read:                            0
+2019-03-27 22:53:57,830 - INFO:         write:                           6244
+2019-03-27 22:53:57,830 - INFO:         other:                           3122
+2019-03-27 22:53:57,831 - INFO:         total:                           9366
+2019-03-27 22:53:57,831 - INFO:     transactions:                        1561   (156.00 per sec.)
+2019-03-27 22:53:57,831 - INFO:     queries:                             9366   (936.00 per sec.)
+2019-03-27 22:53:57,831 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:53:57,831 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:53:57,831 - INFO: 
+2019-03-27 22:53:57,831 - INFO: General statistics:
+2019-03-27 22:53:57,831 - INFO:     total time:                          10.0049s
+2019-03-27 22:53:57,831 - INFO:     total number of events:              1561
+2019-03-27 22:53:57,831 - INFO: 
+2019-03-27 22:53:57,831 - INFO: Latency (ms):
+2019-03-27 22:53:57,831 - INFO:          min:                                    5.11
+2019-03-27 22:53:57,831 - INFO:          avg:                                    6.41
+2019-03-27 22:53:57,831 - INFO:          max:                                   22.84
+2019-03-27 22:53:57,831 - INFO:          95th percentile:                        7.43
+2019-03-27 22:53:57,831 - INFO:          sum:                                 9998.58
+2019-03-27 22:53:57,831 - INFO: 
+2019-03-27 22:53:57,831 - INFO: Threads fairness:
+2019-03-27 22:53:57,831 - INFO:     events (avg/stddev):           1561.0000/0.00
+2019-03-27 22:53:57,831 - INFO:     execution time (avg/stddev):   9.9986/0.00
+2019-03-27 22:53:57,831 - INFO: 
+2019-03-27 22:53:57,831 - INFO: '
+2019-03-27 22:53:57,900 - INFO: ##########TEST oltp_write_only IS DONE##########
+2019-03-27 22:53:57,900 - INFO: ##########START oltp_update_index TEST##########:
+2019-03-27 22:53:57,900 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_update_index
+2019-03-27 22:54:08,239 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:54:08,239 - INFO: 
+2019-03-27 22:54:08,239 - INFO: Running the test with following options:
+2019-03-27 22:54:08,239 - INFO: Number of threads: 1
+2019-03-27 22:54:08,239 - INFO: Initializing random number generator from current time
+2019-03-27 22:54:08,239 - INFO: 
+2019-03-27 22:54:08,239 - INFO: 
+2019-03-27 22:54:08,240 - INFO: Initializing worker threads...
+2019-03-27 22:54:08,240 - INFO: 
+2019-03-27 22:54:08,240 - INFO: Threads started!
+2019-03-27 22:54:08,240 - INFO: 
+2019-03-27 22:54:08,240 - INFO: SQL statistics:
+2019-03-27 22:54:08,240 - INFO:     queries performed:
+2019-03-27 22:54:08,240 - INFO:         read:                            0
+2019-03-27 22:54:08,240 - INFO:         write:                           3324
+2019-03-27 22:54:08,240 - INFO:         other:                           0
+2019-03-27 22:54:08,240 - INFO:         total:                           3324
+2019-03-27 22:54:08,240 - INFO:     transactions:                        3324   (332.23 per sec.)
+2019-03-27 22:54:08,240 - INFO:     queries:                             3324   (332.23 per sec.)
+2019-03-27 22:54:08,240 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:54:08,240 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:54:08,240 - INFO: 
+2019-03-27 22:54:08,240 - INFO: General statistics:
+2019-03-27 22:54:08,240 - INFO:     total time:                          10.0036s
+2019-03-27 22:54:08,240 - INFO:     total number of events:              3324
+2019-03-27 22:54:08,240 - INFO: 
+2019-03-27 22:54:08,240 - INFO: Latency (ms):
+2019-03-27 22:54:08,240 - INFO:          min:                                    2.18
+2019-03-27 22:54:08,240 - INFO:          avg:                                    3.01
+2019-03-27 22:54:08,240 - INFO:          max:                                    8.56
+2019-03-27 22:54:08,241 - INFO:          95th percentile:                        3.82
+2019-03-27 22:54:08,241 - INFO:          sum:                                 9996.10
+2019-03-27 22:54:08,241 - INFO: 
+2019-03-27 22:54:08,241 - INFO: Threads fairness:
+2019-03-27 22:54:08,241 - INFO:     events (avg/stddev):           3324.0000/0.00
+2019-03-27 22:54:08,241 - INFO:     execution time (avg/stddev):   9.9961/0.00
+2019-03-27 22:54:08,241 - INFO: 
+2019-03-27 22:54:08,241 - INFO: '
+2019-03-27 22:54:08,304 - INFO: ##########TEST oltp_update_index IS DONE##########
+2019-03-27 22:54:08,304 - INFO: ##########START oltp_update_non_index TEST##########:
+2019-03-27 22:54:08,304 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_update_non_index
+2019-03-27 22:54:18,667 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:54:18,667 - INFO: 
+2019-03-27 22:54:18,668 - INFO: Running the test with following options:
+2019-03-27 22:54:18,668 - INFO: Number of threads: 1
+2019-03-27 22:54:18,668 - INFO: Initializing random number generator from current time
+2019-03-27 22:54:18,668 - INFO: 
+2019-03-27 22:54:18,668 - INFO: 
+2019-03-27 22:54:18,668 - INFO: Initializing worker threads...
+2019-03-27 22:54:18,668 - INFO: 
+2019-03-27 22:54:18,668 - INFO: Threads started!
+2019-03-27 22:54:18,668 - INFO: 
+2019-03-27 22:54:18,668 - INFO: SQL statistics:
+2019-03-27 22:54:18,668 - INFO:     queries performed:
+2019-03-27 22:54:18,668 - INFO:         read:                            0
+2019-03-27 22:54:18,668 - INFO:         write:                           3272
+2019-03-27 22:54:18,668 - INFO:         other:                           0
+2019-03-27 22:54:18,668 - INFO:         total:                           3272
+2019-03-27 22:54:18,668 - INFO:     transactions:                        3272   (327.04 per sec.)
+2019-03-27 22:54:18,669 - INFO:     queries:                             3272   (327.04 per sec.)
+2019-03-27 22:54:18,669 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:54:18,669 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:54:18,669 - INFO: 
+2019-03-27 22:54:18,669 - INFO: General statistics:
+2019-03-27 22:54:18,669 - INFO:     total time:                          10.0034s
+2019-03-27 22:54:18,669 - INFO:     total number of events:              3272
+2019-03-27 22:54:18,669 - INFO: 
+2019-03-27 22:54:18,669 - INFO: Latency (ms):
+2019-03-27 22:54:18,669 - INFO:          min:                                    2.19
+2019-03-27 22:54:18,669 - INFO:          avg:                                    3.06
+2019-03-27 22:54:18,669 - INFO:          max:                                   12.44
+2019-03-27 22:54:18,669 - INFO:          95th percentile:                        3.89
+2019-03-27 22:54:18,669 - INFO:          sum:                                 9996.11
+2019-03-27 22:54:18,669 - INFO: 
+2019-03-27 22:54:18,669 - INFO: Threads fairness:
+2019-03-27 22:54:18,669 - INFO:     events (avg/stddev):           3272.0000/0.00
+2019-03-27 22:54:18,669 - INFO:     execution time (avg/stddev):   9.9961/0.00
+2019-03-27 22:54:18,669 - INFO: 
+2019-03-27 22:54:18,669 - INFO: '
+2019-03-27 22:54:18,732 - INFO: ##########TEST oltp_update_non_index IS DONE##########
+2019-03-27 22:54:18,732 - INFO: ##########START oltp_read_write TEST##########:
+2019-03-27 22:54:18,732 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb oltp_read_write
+2019-03-27 22:54:29,121 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:54:29,121 - INFO: 
+2019-03-27 22:54:29,121 - INFO: Running the test with following options:
+2019-03-27 22:54:29,121 - INFO: Number of threads: 1
+2019-03-27 22:54:29,121 - INFO: Initializing random number generator from current time
+2019-03-27 22:54:29,121 - INFO: 
+2019-03-27 22:54:29,122 - INFO: 
+2019-03-27 22:54:29,122 - INFO: Initializing worker threads...
+2019-03-27 22:54:29,122 - INFO: 
+2019-03-27 22:54:29,122 - INFO: Threads started!
+2019-03-27 22:54:29,122 - INFO: 
+2019-03-27 22:54:29,122 - INFO: SQL statistics:
+2019-03-27 22:54:29,122 - INFO:     queries performed:
+2019-03-27 22:54:29,122 - INFO:         read:                            8022
+2019-03-27 22:54:29,122 - INFO:         write:                           2292
+2019-03-27 22:54:29,122 - INFO:         other:                           1146
+2019-03-27 22:54:29,122 - INFO:         total:                           11460
+2019-03-27 22:54:29,122 - INFO:     transactions:                        573    (57.23 per sec.)
+2019-03-27 22:54:29,122 - INFO:     queries:                             11460  (1144.64 per sec.)
+2019-03-27 22:54:29,122 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:54:29,122 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:54:29,122 - INFO: 
+2019-03-27 22:54:29,122 - INFO: General statistics:
+2019-03-27 22:54:29,122 - INFO:     total time:                          10.0104s
+2019-03-27 22:54:29,122 - INFO:     total number of events:              573
+2019-03-27 22:54:29,122 - INFO: 
+2019-03-27 22:54:29,122 - INFO: Latency (ms):
+2019-03-27 22:54:29,122 - INFO:          min:                                   14.53
+2019-03-27 22:54:29,122 - INFO:          avg:                                   17.46
+2019-03-27 22:54:29,123 - INFO:          max:                                   53.57
+2019-03-27 22:54:29,123 - INFO:          95th percentile:                       20.00
+2019-03-27 22:54:29,123 - INFO:          sum:                                10005.96
+2019-03-27 22:54:29,123 - INFO: 
+2019-03-27 22:54:29,123 - INFO: Threads fairness:
+2019-03-27 22:54:29,123 - INFO:     events (avg/stddev):           573.0000/0.00
+2019-03-27 22:54:29,123 - INFO:     execution time (avg/stddev):   10.0060/0.00
+2019-03-27 22:54:29,123 - INFO: 
+2019-03-27 22:54:29,123 - INFO: '
+2019-03-27 22:54:29,186 - INFO: ##########TEST oltp_read_write IS DONE##########
+2019-03-27 22:54:29,186 - INFO: ##########START select_random_points TEST##########:
+2019-03-27 22:54:29,187 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb select_random_points
+2019-03-27 22:54:39,561 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:54:39,562 - INFO: 
+2019-03-27 22:54:39,562 - INFO: Running the test with following options:
+2019-03-27 22:54:39,562 - INFO: Number of threads: 1
+2019-03-27 22:54:39,562 - INFO: Initializing random number generator from current time
+2019-03-27 22:54:39,562 - INFO: 
+2019-03-27 22:54:39,562 - INFO: 
+2019-03-27 22:54:39,562 - INFO: Initializing worker threads...
+2019-03-27 22:54:39,562 - INFO: 
+2019-03-27 22:54:39,562 - INFO: Threads started!
+2019-03-27 22:54:39,562 - INFO: 
+2019-03-27 22:54:39,562 - INFO: SQL statistics:
+2019-03-27 22:54:39,562 - INFO:     queries performed:
+2019-03-27 22:54:39,562 - INFO:         read:                            3307
+2019-03-27 22:54:39,562 - INFO:         write:                           0
+2019-03-27 22:54:39,562 - INFO:         other:                           0
+2019-03-27 22:54:39,562 - INFO:         total:                           3307
+2019-03-27 22:54:39,562 - INFO:     transactions:                        3307   (330.57 per sec.)
+2019-03-27 22:54:39,562 - INFO:     queries:                             3307   (330.57 per sec.)
+2019-03-27 22:54:39,562 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:54:39,562 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:54:39,563 - INFO: 
+2019-03-27 22:54:39,563 - INFO: General statistics:
+2019-03-27 22:54:39,563 - INFO:     total time:                          10.0024s
+2019-03-27 22:54:39,563 - INFO:     total number of events:              3307
+2019-03-27 22:54:39,563 - INFO: 
+2019-03-27 22:54:39,563 - INFO: Latency (ms):
+2019-03-27 22:54:39,563 - INFO:          min:                                    1.48
+2019-03-27 22:54:39,563 - INFO:          avg:                                    3.02
+2019-03-27 22:54:39,563 - INFO:          max:                                   10.36
+2019-03-27 22:54:39,563 - INFO:          95th percentile:                        3.96
+2019-03-27 22:54:39,563 - INFO:          sum:                                 9993.49
+2019-03-27 22:54:39,563 - INFO: 
+2019-03-27 22:54:39,563 - INFO: Threads fairness:
+2019-03-27 22:54:39,563 - INFO:     events (avg/stddev):           3307.0000/0.00
+2019-03-27 22:54:39,563 - INFO:     execution time (avg/stddev):   9.9935/0.00
+2019-03-27 22:54:39,563 - INFO: 
+2019-03-27 22:54:39,563 - INFO: '
+2019-03-27 22:54:39,622 - INFO: ##########TEST select_random_points IS DONE##########
+2019-03-27 22:54:39,622 - INFO: ##########START select_random_ranges TEST##########:
+2019-03-27 22:54:39,622 - INFO: sysbench --db-driver=mysql --mysql-host=192.168.1.18 --mysql-port=3306 --mysql-user=sbtest --mysql-password=123456         --mysql-db=tempdb select_random_ranges
+2019-03-27 22:54:49,999 - INFO: b'sysbench 1.0.16 (using bundled LuaJIT 2.1.0-beta2)
+2019-03-27 22:54:49,999 - INFO: 
+2019-03-27 22:54:49,999 - INFO: Running the test with following options:
+2019-03-27 22:54:49,999 - INFO: Number of threads: 1
+2019-03-27 22:54:49,999 - INFO: Initializing random number generator from current time
+2019-03-27 22:54:49,999 - INFO: 
+2019-03-27 22:54:49,999 - INFO: 
+2019-03-27 22:54:49,999 - INFO: Initializing worker threads...
+2019-03-27 22:54:50,000 - INFO: 
+2019-03-27 22:54:50,000 - INFO: Threads started!
+2019-03-27 22:54:50,000 - INFO: 
+2019-03-27 22:54:50,000 - INFO: SQL statistics:
+2019-03-27 22:54:50,000 - INFO:     queries performed:
+2019-03-27 22:54:50,000 - INFO:         read:                            5753
+2019-03-27 22:54:50,000 - INFO:         write:                           0
+2019-03-27 22:54:50,000 - INFO:         other:                           0
+2019-03-27 22:54:50,000 - INFO:         total:                           5753
+2019-03-27 22:54:50,000 - INFO:     transactions:                        5753   (575.00 per sec.)
+2019-03-27 22:54:50,000 - INFO:     queries:                             5753   (575.00 per sec.)
+2019-03-27 22:54:50,000 - INFO:     ignored errors:                      0      (0.00 per sec.)
+2019-03-27 22:54:50,000 - INFO:     reconnects:                          0      (0.00 per sec.)
+2019-03-27 22:54:50,000 - INFO: 
+2019-03-27 22:54:50,000 - INFO: General statistics:
+2019-03-27 22:54:50,000 - INFO:     total time:                          10.0034s
+2019-03-27 22:54:50,000 - INFO:     total number of events:              5753
+2019-03-27 22:54:50,000 - INFO: 
+2019-03-27 22:54:50,000 - INFO: Latency (ms):
+2019-03-27 22:54:50,000 - INFO:          min:                                    1.05
+2019-03-27 22:54:50,000 - INFO:          avg:                                    1.74
+2019-03-27 22:54:50,000 - INFO:          max:                                    3.94
+2019-03-27 22:54:50,000 - INFO:          95th percentile:                        2.18
+2019-03-27 22:54:50,000 - INFO:          sum:                                 9991.19
+2019-03-27 22:54:50,001 - INFO: 
+2019-03-27 22:54:50,001 - INFO: Threads fairness:
+2019-03-27 22:54:50,001 - INFO:     events (avg/stddev):           5753.0000/0.00
+2019-03-27 22:54:50,001 - INFO:     execution time (avg/stddev):   9.9912/0.00
+2019-03-27 22:54:50,001 - INFO: 
+2019-03-27 22:54:50,001 - INFO: '
+2019-03-27 22:54:50,056 - INFO: ##########TEST select_random_ranges IS DONE##########
